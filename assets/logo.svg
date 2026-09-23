@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0D58D" />
+      <stop offset="50%" stop-color="#C8A45D" />
+      <stop offset="100%" stop-color="#9A7B38" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C8A45D" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#C8A45D" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="100" cy="100" r="94" fill="url(#glowGrad)" />
+
+  <!-- Outer Fine Ring -->
+  <circle cx="100" cy="100" r="88" fill="none" stroke="url(#goldGrad)" stroke-width="1.2" stroke-opacity="0.8" />
+  
+  <!-- Dashed Luxury Orbit -->
+  <circle cx="100" cy="100" r="82" fill="none" stroke="url(#goldGrad)" stroke-width="0.8" stroke-dasharray="3, 4" stroke-opacity="0.6" />
+  
+  <!-- Inner Ring -->
+  <circle cx="100" cy="100" r="76" fill="#0D0D0D" stroke="url(#goldGrad)" stroke-width="1.5" />
+
+  <!-- Star Embellishments -->
+  <path d="M100 28 L101.5 32 L105.5 33.5 L101.5 35 L100 39 L98.5 35 L94.5 33.5 L98.5 32 Z" fill="url(#goldGrad)" />
+  <path d="M100 161 L101.5 165 L105.5 166.5 L101.5 168 L100 172 L98.5 168 L94.5 166.5 L98.5 165 Z" fill="url(#goldGrad)" />
+
+  <!-- Monogram Monolith AF -->
+  <!-- Letter A -->
+  <path d="M78 132 L96 70 L104 70 L122 132 L112 132 L106.5 112 L93.5 112 L88 132 Z M95.8 103 L104.2 103 L100 87 Z" fill="url(#goldGrad)" />
+  
+  <!-- Stylized F Overlay in Serifs -->
+  <path d="M100 70 L126 70 L126 78 L108 78 L108 97 L122 97 L122 105 L108 105 L108 132 L100 132 Z" fill="url(#goldGrad)" fill-opacity="0.9" />
+
+  <!-- Subtle Center Diamond -->
+  <polygon points="100,64 103,67 100,70 97,67" fill="#F0D58D" />
+</svg>

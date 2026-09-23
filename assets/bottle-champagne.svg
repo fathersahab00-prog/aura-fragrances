@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 420" width="100%" height="100%">
+  <defs>
+    <radialGradient id="c-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F0D58D" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#080808" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="c-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F0D58D" />
+      <stop offset="50%" stop-color="#C8A45D" />
+      <stop offset="100%" stop-color="#9A7B38" />
+    </linearGradient>
+    <linearGradient id="c-glass" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A1813" />
+      <stop offset="30%" stop-color="#3A301D" />
+      <stop offset="60%" stop-color="#211B0F" />
+      <stop offset="100%" stop-color="#120E09" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="160" cy="230" rx="140" ry="140" fill="url(#c-halo)" />
+  <ellipse cx="160" cy="380" rx="90" ry="12" fill="#000000" opacity="0.8" />
+  <!-- Spherical/Beveled Gold Cap -->
+  <circle cx="160" cy="85" r="32" fill="url(#c-gold)" stroke="#84652A" stroke-width="0.8" />
+  <rect x="145" y="117" width="30" height="15" fill="url(#c-gold)" />
+  <!-- Elegant Curving Flacon Body -->
+  <path d="M110 132 C95 180 90 280 100 350 L220 350 C230 280 225 180 210 132 Z" fill="url(#c-glass)" stroke="rgba(240, 213, 141, 0.5)" stroke-width="1" />
+  <!-- Specular Reflection -->
+  <path d="M115 140 C103 190 100 270 108 340" stroke="#FFF" stroke-width="5" opacity="0.15" fill="none" />
+  <!-- Label Badge -->
+  <rect x="122" y="200" width="76" height="96" rx="2" fill="#0B0B0C" stroke="url(#c-gold)" stroke-width="0.8" />
+  <circle cx="160" cy="222" r="9" fill="none" stroke="url(#c-gold)" stroke-width="0.8" />
+  <text x="160" y="225" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="7" font-weight="700" fill="#F0D58D">AF</text>
+  <text x="160" y="244" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="9" font-weight="700" fill="#F6F3EC" letter-spacing="1">AURA</text>
+  <text x="160" y="254" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="4.5" fill="#C8A45D" letter-spacing="1.5">FOR HER</text>
+  <line x1="135" y1="260" x2="185" y2="260" stroke="#C8A45D" stroke-width="0.5" opacity="0.5" />
+  <text x="160" y="272" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="6.5" font-style="italic" fill="#F0D58D">[PARFUM]</text>
+  <text x="160" y="283" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="4" fill="#AAA39A">100 ML</text>
+</svg>

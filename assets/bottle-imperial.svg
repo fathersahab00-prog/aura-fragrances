@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 420" width="100%" height="100%">
+  <defs>
+    <radialGradient id="i-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C8A45D" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#080808" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="i-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFF3CE" />
+      <stop offset="35%" stop-color="#C8A45D" />
+      <stop offset="70%" stop-color="#F0D58D" />
+      <stop offset="100%" stop-color="#84652A" />
+    </linearGradient>
+    <linearGradient id="i-body" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#18140E" />
+      <stop offset="30%" stop-color="#2D2313" />
+      <stop offset="60%" stop-color="#14110B" />
+      <stop offset="100%" stop-color="#090805" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="160" cy="230" rx="140" ry="140" fill="url(#i-halo)" />
+  <ellipse cx="160" cy="380" rx="90" ry="12" fill="#000000" opacity="0.85" />
+  <!-- Heavy Luxury Beveled Cap -->
+  <polygon points="120,70 200,70 215,115 105,115" fill="url(#i-gold)" stroke="#594418" stroke-width="0.8" />
+  <rect x="135" y="115" width="50" height="15" fill="url(#i-gold)" />
+  <!-- Faceted Crystal Flacon -->
+  <polygon points="105,130 215,130 230,355 90,355" fill="url(#i-body)" stroke="rgba(240, 213, 141, 0.5)" stroke-width="1.2" />
+  <!-- Facet Edge Lines -->
+  <line x1="125" y1="130" x2="115" y2="355" stroke="#FFF" stroke-width="2" opacity="0.18" />
+  <line x1="195" y1="130" x2="205" y2="355" stroke="#FFF" stroke-width="1.5" opacity="0.1" />
+  <line x1="160" y1="130" x2="160" y2="355" stroke="url(#i-gold)" stroke-width="0.8" opacity="0.3" />
+  <!-- Crest Emblem Label -->
+  <rect x="120" y="200" width="80" height="100" rx="3" fill="#0A0907" stroke="url(#i-gold)" stroke-width="1" />
+  <circle cx="160" cy="225" r="11" fill="none" stroke="url(#i-gold)" stroke-width="0.8" />
+  <text x="160" y="229" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="8" font-weight="700" fill="#F0D58D">AF</text>
+  <text x="160" y="250" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="9" font-weight="700" fill="#F6F3EC" letter-spacing="1.5">AURA</text>
+  <text x="160" y="260" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="4.5" fill="#C8A45D" letter-spacing="2">EDITION</text>
+  <line x1="135" y1="268" x2="185" y2="268" stroke="#C8A45D" stroke-width="0.5" opacity="0.4" />
+  <text x="160" y="280" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="7" font-style="italic" fill="#F0D58D">[BEST SELLER]</text>
+  <text x="160" y="291" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="4" fill="#AAA39A">100 ML</text>
+</svg>
