@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aura Fragrances by Friends - Premium luxury fragrances crafted for those who expect more. More Than a Fragrance. It's Your Aura." />
+  <meta name="theme-color" content="#080808" />
+  <title>AURA FRAGRANCES BY FRIENDS | Premium Fragrances</title>
+
+  <!-- Google Fonts: Cormorant Garamond (Luxury Serif) & Montserrat / Inter (Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. HEADER / NAVIGATION (Sticky Premium Bar)
+       ========================================================================== -->
+  <header class="header-sticky" id="main-header">
+    <div class="container nav-container">
+      <!-- Left: Monogram Logo + Brand Name -->
+      <a href="#hero" class="brand-identity" aria-label="Aura Fragrances by Friends Home">
+        <img src="assets/logo.svg" alt="Aura Fragrances Emblem" class="brand-logo-img" />
+        <div class="brand-name">
+          AURA FRAGRANCES
+          <span>BY FRIENDS</span>
+        </div>
+      </a>
+
+      <!-- Center: Desktop Navigation Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#shop" class="nav-link">Shop</a></li>
+          <li><a href="#collections" class="nav-link">Collections</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#why-aura" class="nav-link">Why Aura</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Action Icons & Order Button -->
+      <div class="nav-actions">
+        <!-- Search Trigger -->
+        <button class="nav-icon-btn search-toggle-btn" aria-label="Search Fragrances" title="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Wishlist Drawer Trigger -->
+        <button class="nav-icon-btn wishlist-toggle-btn" aria-label="Wishlist" title="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="nav-badge" id="wishlist-badge-header" style="display: none;">0</span>
+        </button>
+
+        <!-- Shopping Bag / Cart Drawer Trigger -->
+        <button class="nav-icon-btn cart-toggle-btn" aria-label="Shopping Cart" title="Shopping Bag">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="nav-badge" id="cart-badge-header" style="display: none;">0</span>
+        </button>
+
+        <!-- Order Now Button -->
+        <a href="#shop" class="btn btn-primary btn-sm open-checkout-trigger">Order Now</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Slide Navigation Drawer -->
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div>
+      <div style="margin-bottom: 2.5rem;">
+        <span class="badge-luxury">Aura Fragrances by Friends</span>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#why-aura">Why Aura</a></li>
+        <li><a href="#order-process">How To Order</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="mobile-drawer-footer">
+      <p style="font-size: 0.75rem; letter-spacing: 0.15em; color: var(--gold-light); margin-bottom: 1rem;">@aurafragrancesbyfriends</p>
+      <a href="#shop" class="btn btn-primary" style="width: 100%; text-align: center;">Explore Shop</a>
+    </div>
+  </aside>
+
+  <!-- Global Backdrop Overlay -->
+  <div class="backdrop-overlay" id="backdrop-overlay"></div>
+
+  <!-- ==========================================================================
+       2. HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <!-- Subtle Golden Canvas Particles -->
+    <canvas id="hero-particles"></canvas>
+    <div class="hero-glow-orb"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tagline-badge">
+          <span class="badge-luxury">Premium Products | Premium Experience</span>
+        </div>
+
+        <h1 class="hero-headline">
+          MORE THAN A<br />
+          FRAGRANCE.
+          <span class="highlight-aura">IT’S YOUR AURA.</span>
+        </h1>
+
+        <p class="hero-supporting-text">
+          Discover premium fragrances curated for those who expect more.
+        </p>
+
+        <div class="hero-small-text">
+          Premium Products | Premium Experience
+        </div>
+
+        <div class="hero-actions">
+          <a href="#shop" class="btn btn-primary">Shop Collection</a>
+          <a href="#checkout" class="btn btn-secondary open-checkout-trigger">Order Now</a>
+        </div>
+      </div>
+
+      <div class="hero-visual-wrapper">
+        <div class="hero-bottle-frame">
+          <img src="assets/hero-bottle.svg" alt="Aura Fragrances Luxury Flacon" class="hero-bottle-img" />
+          <div class="hero-pedestal"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. BRAND INTRODUCTION
+       ========================================================================== -->
+  <section class="brand-intro-section" id="collections">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Identity & Presence</span>
+        <h2 class="section-title">ELEVATE YOUR STYLE.</h2>
+        <div class="divider-gold"></div>
+        <p class="intro-lead-text">
+          “At Aura Fragrances by Friends, we believe fragrance is more than just a scent — it is a part of your personality, your presence and the impression you leave behind.”
+        </p>
+      </div>
+
+      <!-- 4 Premium Feature Cards -->
+      <div class="feature-cards-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">✧</div>
+          <h3>1. Premium Quality</h3>
+          <p>Quality-focused fragrance selection.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">✦</div>
+          <h3>2. Curated Collection</h3>
+          <p>Fragrances selected for different styles and occasions.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">◈</div>
+          <h3>3. Pan-India Delivery</h3>
+          <p>Delivery available across India.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">❖</div>
+          <h3>4. Premium Experience</h3>
+          <p>From discovery to delivery, every detail matters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. SHOP / COLLECTION (Catalogue, Filters, Search, Cards)
+       ========================================================================== -->
+  <section class="shop-section" id="shop">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Curated Flacons</span>
+        <h2 class="section-title">SHOP THE COLLECTION</h2>
+        <p class="section-subtitle">
+          Explore our range of personal signature fragrances crafted for distinction.
+        </p>
+      </div>
+
+      <!-- Catalogue Filtering Toolbar -->
+      <div class="catalogue-toolbar">
+        <!-- Category Filter Tabs -->
+        <div class="category-tabs" role="tablist">
+          <button class="cat-tab-btn active" data-category="all" role="tab">All Fragrances</button>
+          <button class="cat-tab-btn" data-category="for-him" role="tab">For Him</button>
+          <button class="cat-tab-btn" data-category="for-her" role="tab">For Her</button>
+          <button class="cat-tab-btn" data-category="unisex" role="tab">Unisex</button>
+          <button class="cat-tab-btn" data-category="best-sellers" role="tab">Best Sellers</button>
+        </div>
+
+        <!-- Secondary Filter & Search Bar -->
+        <div class="filter-secondary-bar">
+          <div class="search-inline-wrapper">
+            <span class="search-inline-icon">⚲</span>
+            <input type="text" id="search-inline-input" class="search-inline-input" placeholder="Search collection..." />
+          </div>
+
+          <div class="select-filters-group">
+            <!-- Fragrance Type Filter -->
+            <select id="type-filter-select" class="custom-select" aria-label="Filter by Fragrance Type">
+              <option value="all">Fragrance Type: All</option>
+              <option value="placeholder">[Fragrance Type Placeholder]</option>
+            </select>
+
+            <!-- Sort By Selector -->
+            <select id="sort-select" class="custom-select" aria-label="Sort Fragrances">
+              <option value="featured">Sort by: Featured</option>
+              <option value="az">Alphabetical: A - Z</option>
+              <option value="za">Alphabetical: Z - A</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Cards Grid (Populated dynamically from products-data.js) -->
+      <div class="products-grid" id="products-grid">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. ABOUT AURA (Split-Screen Luxury Section)
+       ========================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Left: Luxury Framed Visual Showcase -->
+        <div class="about-imagery">
+          <div class="about-frame">
+            <img src="assets/bottle-imperial.svg" alt="Aura Fragrances Editorial" class="about-img" />
+          </div>
+        </div>
+
+        <!-- Right: Brand Philosophy & Story -->
+        <div class="about-content">
+          <span class="section-label">Our Philosophy</span>
+          <h2 class="section-title">THE FRAGRANCE<br />BEHIND THE AURA.</h2>
+          <div class="divider-gold" style="margin-left: 0;"></div>
+          
+          <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+            “Aura Fragrances by Friends is built around a simple idea: fragrance should feel personal. Our collection is curated for people who appreciate quality, elegance and a lasting impression.”
+          </p>
+
+          <div class="about-highlight-box">
+            <p class="about-highlight-phrase">
+              “Your Fragrance.<br />
+              Your Aura.<br />
+              Your Identity.”
+            </p>
+          </div>
+
+          <p style="margin-bottom: 2rem;">
+            Every bottle is an ode to refined craftsmanship, combining deep black aesthetics with champagne gold accents designed to stand majestically on any vanity.
+          </p>
+
+          <a href="#shop" class="btn btn-secondary">Explore The Aura</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. WHY AURA (Luxury Feature Section)
+       ========================================================================== -->
+  <section class="why-aura-section" id="why-aura">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Distinction & Excellence</span>
+        <h2 class="section-title">WHY AURA</h2>
+        <div class="divider-gold"></div>
+        <p class="section-subtitle">
+          Created with an uncompromising commitment to personal luxury and exceptional service.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-card-num">01</div>
+          <h3>PREMIUM PRODUCTS</h3>
+          <p>Carefully selected fragrance products.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-card-num">02</div>
+          <h3>CURATED FOR YOU</h3>
+          <p>A collection designed around different preferences and personalities.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-card-num">03</div>
+          <h3>PAN-INDIA DELIVERY</h3>
+          <p>Delivering across India.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-card-num">04</div>
+          <h3>PREMIUM EXPERIENCE</h3>
+          <p>A refined experience from selection to delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. HOW TO ORDER (4-Step Luxury Process)
+       ========================================================================== -->
+  <section class="order-process-section" id="order-process">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Concierge Ordering</span>
+        <h2 class="section-title">HOW TO ORDER</h2>
+        <div class="divider-gold"></div>
+        <p class="section-subtitle">
+          Four effortless steps to bringing your signature aura home.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="process-step-badge">01</div>
+          <h3>01 — EXPLORE</h3>
+          <p>Browse the fragrance collection.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-step-badge">02</div>
+          <h3>02 — CHOOSE</h3>
+          <p>Select your preferred fragrance.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-step-badge">03</div>
+          <h3>03 — ORDER</h3>
+          <p>Place your order through the website or WhatsApp.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-step-badge">04</div>
+          <h3>04 — ENJOY</h3>
+          <p>Receive your fragrance at your doorstep.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. INSTAGRAM SECTION
+       ========================================================================== -->
+  <section class="instagram-section" id="instagram">
+    <div class="container">
+      <span class="section-label">Connect & Experience</span>
+      <h2 class="section-title">FOLLOW THE AURA.</h2>
+      
+      <div>
+        <a href="https://www.instagram.com/aurafragrancesbyfriends/" target="_blank" rel="noopener noreferrer" class="insta-handle-link">
+          @aurafragrancesbyfriends
+        </a>
+      </div>
+
+      <!-- 6-Slot Instagram Editorial Grid -->
+      <div class="insta-gallery-grid">
+        <div class="insta-card">
+          <img src="assets/insta-1.svg" alt="Instagram Post Placeholder" loading="lazy" />
+          <div class="insta-overlay"><span>✦</span></div>
+        </div>
+        <div class="insta-card">
+          <img src="assets/insta-2.svg" alt="Instagram Post Placeholder" loading="lazy" />
+          <div class="insta-overlay"><span>✦</span></div>
+        </div>
+        <div class="insta-card">
+          <img src="assets/insta-3.svg" alt="Instagram Post Placeholder" loading="lazy" />
+          <div class="insta-overlay"><span>✦</span></div>
+        </div>
+        <div class="insta-card">
+          <img src="assets/insta-4.svg" alt="Instagram Post Placeholder" loading="lazy" />
+          <div class="insta-overlay"><span>✦</span></div>
+        </div>
+        <div class="insta-card">
+          <img src="assets/insta-5.svg" alt="Instagram Post Placeholder" loading="lazy" />
+          <div class="insta-overlay"><span>✦</span></div>
+        </div>
+        <div class="insta-card">
+          <img src="assets/insta-6.svg" alt="Instagram Post Placeholder" loading="lazy" />
+          <div class="insta-overlay"><span>✦</span></div>
+        </div>
+      </div>
+
+      <a href="https://www.instagram.com/aurafragrancesbyfriends/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        FOLLOW US ON INSTAGRAM
+      </a>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. TESTIMONIALS (Patron Impressions & Sentiments)
+       ========================================================================== -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Client Sentiments</span>
+        <h2 class="section-title">WORDS OF APPRECIATION</h2>
+        <div class="divider-gold"></div>
+        <p class="section-subtitle">
+          Verified impressions and testimonials from our fragrance patrons across India.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+          <p class="testimonial-quote">“Obsidian Aura is simply on another level. The dry-down of smoky agarwood and warm amber lasts over 12 hours on skin. It has instantly become my signature evening scent.”</p>
+          <div class="testimonial-author-meta">
+            <div class="testimonial-avatar-placeholder">KV</div>
+            <div class="testimonial-author-info">
+              <h4>Kabir V.</h4>
+              <span>Verified Patron • Mumbai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+          <p class="testimonial-quote">“Velvet Aurelia drew compliments the very first evening I wore it. The champagne accord and damask rose blend is radiant, opulent, and feels like true niche perfumery.”</p>
+          <div class="testimonial-author-meta">
+            <div class="testimonial-avatar-placeholder">AM</div>
+            <div class="testimonial-author-info">
+              <h4>Ananya M.</h4>
+              <span>Verified Patron • New Delhi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+          <p class="testimonial-quote">“Celestial Santal hits that elusive harmony of creamy Australian sandalwood, violet, and soft leather. The unboxing experience alone reflects international luxury standards.”</p>
+          <div class="testimonial-author-meta">
+            <div class="testimonial-avatar-placeholder">RS</div>
+            <div class="testimonial-author-info">
+              <h4>Rohan S.</h4>
+              <span>Verified Patron • Bangalore</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       11. FAQ ACCORDION
+       ========================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Inquiries & Assistance</span>
+        <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+        <div class="divider-gold"></div>
+      </div>
+
+      <div class="faq-accordion-container">
+        <!-- Question 1 -->
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button">
+            <span>Do you deliver across India?</span>
+            <span class="faq-icon-indicator">+</span>
+          </button>
+          <div class="faq-answer-panel">
+            <div class="faq-answer-content">
+              Yes, we provide expedited Pan-India delivery across all serviceable postal codes in India. Every fragrance flacon is cradled in our custom impact-resistant luxury presentation box with tamper-proof security seals to ensure immaculate transit.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button">
+            <span>Which fragrances are available?</span>
+            <span class="faq-icon-indicator">+</span>
+          </button>
+          <div class="faq-answer-panel">
+            <div class="faq-answer-content">
+              Our inaugural collection features 8 signature compositions: <strong>Obsidian Aura</strong> & <strong>Monarch Noir</strong> (For Him), <strong>Velvet Aurelia</strong> & <strong>Golden Sillage</strong> (For Her), <strong>Aura Sublime</strong> & <strong>Celestial Santal</strong> (Unisex), and our private reserve editions <strong>Imperial Aura</strong> & <strong>Elysian Mist</strong> (Best Sellers). Available in 50ml and 100ml flacons.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button">
+            <span>How can I place an order?</span>
+            <span class="faq-icon-indicator">+</span>
+          </button>
+          <div class="faq-answer-panel">
+            <div class="faq-answer-content">
+              You can place an order directly on our website through our integrated shopping bag and checkout system, or enjoy personalized concierge shopping by placing your order directly through WhatsApp with one tap.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button">
+            <span>Do you offer Cash on Delivery?</span>
+            <span class="faq-icon-indicator">+</span>
+          </button>
+          <div class="faq-answer-panel">
+            <div class="faq-answer-content">
+              Yes, Cash on Delivery (COD) is available on orders across major serviceable cities in India with a quick phone or WhatsApp verification prior to dispatch.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button">
+            <span>What payment methods do you accept?</span>
+            <span class="faq-icon-indicator">+</span>
+          </button>
+          <div class="faq-answer-panel">
+            <div class="faq-answer-content">
+              We accept all primary digital payment modes including UPI (Google Pay, PhonePe, Paytm), Credit & Debit Cards (Visa, Mastercard, RuPay, Amex), Net Banking, and direct WhatsApp payment transfers.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button">
+            <span>What is the delivery time?</span>
+            <span class="faq-icon-indicator">+</span>
+          </button>
+          <div class="faq-answer-panel">
+            <div class="faq-answer-content">
+              Orders placed before 2:00 PM are dispatched on the same business day. Delivery timelines are typically 2–3 business days for tier-1 metropolitan cities and 4–6 business days for the rest of India via express air courier.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button">
+            <span>What is your return/exchange policy?</span>
+            <span class="faq-icon-indicator">+</span>
+          </button>
+          <div class="faq-answer-panel">
+            <div class="faq-answer-content">
+              Due to the hygiene nature of personal luxury fragrances, opened flacons cannot be returned. However, if your order arrives damaged or defective in transit, we provide a 7-day complimentary door-to-door replacement guarantee. Simply reach out to our concierge with an unboxing photo or video.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       12. CONTACT SECTION
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card-container">
+        <span class="section-label">Concierge Desk</span>
+        <h2 class="section-title">LET’S TALK FRAGRANCE.</h2>
+        <div class="divider-gold"></div>
+        <p style="max-width: 600px; margin: 0 auto 2rem; color: var(--text-secondary);">
+          Whether you need personalized guidance selecting your signature aura, corporate gifting, or bespoke private orders, our concierge team is at your disposal.
+        </p>
+
+        <!-- Contact Cards -->
+        <div class="contact-meta-grid">
+          <div class="contact-meta-item">
+            <div class="contact-meta-icon">📸</div>
+            <div>
+              <h4>Instagram</h4>
+              <p>@aurafragrancesbyfriends</p>
+            </div>
+          </div>
+
+          <div class="contact-meta-item">
+            <div class="contact-meta-icon">💬</div>
+            <div>
+              <h4>WhatsApp Concierge</h4>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+
+          <div class="contact-meta-item">
+            <div class="contact-meta-icon">✉</div>
+            <div>
+              <h4>Email Support</h4>
+              <p>concierge@aurafragrances.com</p>
+            </div>
+          </div>
+        </div>
+
+        <p style="font-size: 0.85rem; color: var(--gold-light); margin-bottom: 2rem; letter-spacing: 0.05em;">
+          Location: Mumbai, Maharashtra • Pan-India Express Delivery
+        </p>
+
+        <div class="contact-buttons-row">
+          <button class="btn btn-whatsapp" onclick="window.AURA_APP.orderCartViaWhatsApp()">
+            MESSAGE ON WHATSAPP
+          </button>
+          <a href="https://www.instagram.com/aurafragrancesbyfriends/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            INSTAGRAM
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       13. FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Identity -->
+        <div class="footer-col">
+          <a href="#hero" class="brand-identity" style="margin-bottom: 1rem;">
+            <img src="assets/logo.svg" alt="Aura Logo" class="brand-logo-img" />
+            <div class="brand-name">
+              AURA FRAGRANCES
+              <span>BY FRIENDS</span>
+            </div>
+          </a>
+          <p class="footer-brand-statement">
+            “More Than a Fragrance. It’s Your Aura.”
+          </p>
+          <p style="font-size: 0.82rem; max-width: 320px;">
+            Sophisticated luxury fragrances crafted for discerning connoisseurs. Curated elegance from discovery to delivery.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#why-aura">Why Aura</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Policy Links -->
+        <div class="footer-col">
+          <h4>Policies</h4>
+          <ul class="footer-links-list">
+            <li><a href="#faq">Privacy Policy</a></li>
+            <li><a href="#faq">Terms & Conditions</a></li>
+            <li><a href="#faq">Shipping Policy</a></li>
+            <li><a href="#faq">Return Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Social & Newsletter -->
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul class="footer-links-list" style="margin-bottom: 1.5rem;">
+            <li><a href="https://www.instagram.com/aurafragrancesbyfriends/" target="_blank" rel="noopener noreferrer">Instagram (@aurafragrancesbyfriends)</a></li>
+            <li><a href="javascript:void(0)" onclick="window.AURA_APP.orderCartViaWhatsApp()">WhatsApp Inquiries</a></li>
+          </ul>
+
+          <div class="footer-newsletter-box">
+            <p>Subscribe for private releases & announcements:</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); window.AURA_APP.showToast('Thank you for subscribing to Aura Fragrances.', '✦'); this.reset();">
+              <input type="email" class="newsletter-input" placeholder="Your email address" required />
+              <button type="submit" class="newsletter-btn">Join</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div class="copyright-text">
+          © 2026 Aura Fragrances by Friends. All rights reserved.
+        </div>
+        <div class="footer-social-icons">
+          <a href="https://www.instagram.com/aurafragrancesbyfriends/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       SLIDE-OVER CART DRAWER
+       ========================================================================== -->
+  <div class="drawer-panel" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping Cart">
+    <div class="drawer-header">
+      <h3>Your Bag</h3>
+      <button class="modal-close-btn modal-close-trigger" aria-label="Close Bag">✕</button>
+    </div>
+
+    <div class="drawer-items-list" id="cart-items-list">
+      <!-- Populated via app.js -->
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-subtotal-row">
+        <span>Estimated Total</span>
+        <span class="drawer-subtotal-val" id="cart-subtotal-val">[Price Placeholder]</span>
+      </div>
+      <div class="drawer-actions-stack">
+        <button class="btn btn-primary" id="cart-checkout-btn" style="width: 100%;">Proceed to Checkout</button>
+        <button class="btn btn-whatsapp" id="cart-whatsapp-btn" style="width: 100%;">Order Bag via WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SLIDE-OVER WISHLIST DRAWER
+       ========================================================================== -->
+  <div class="drawer-panel" id="wishlist-drawer" role="dialog" aria-modal="true" aria-label="Wishlist">
+    <div class="drawer-header">
+      <h3>Saved Fragrances</h3>
+      <button class="modal-close-btn modal-close-trigger" aria-label="Close Wishlist">✕</button>
+    </div>
+
+    <div class="drawer-items-list" id="wishlist-items-list">
+      <!-- Populated via app.js -->
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       5. PRODUCT DETAIL MODAL (Quick View & Fragrance Notes)
+       ========================================================================== -->
+  <div class="modal-overlay" id="product-detail-modal" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <button class="modal-close-btn modal-close-trigger" aria-label="Close details">✕</button>
+      
+      <div class="modal-grid">
+        <!-- Visual Column -->
+        <div class="modal-visual-side">
+          <img src="assets/bottle-noir.svg" alt="Product Visual" class="modal-visual-img" id="modal-product-img" />
+        </div>
+
+        <!-- Info Column -->
+        <div class="modal-info-side">
+          <span class="modal-cat-tag" id="modal-product-cat">For Him</span>
+          <h2 class="modal-title" id="modal-product-title">Product Name</h2>
+          <div class="modal-fragrance-type" id="modal-product-type">[Fragrance Type Placeholder]</div>
+          <div class="modal-price-display" id="modal-product-price">[Price]</div>
+          
+          <p id="modal-product-desc" style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem; color: var(--text-secondary);">
+            [Short fragrance description placeholder]
+          </p>
+
+          <!-- Size Pills -->
+          <div class="modal-size-selection">
+            <div class="option-group-title">Available Sizes</div>
+            <div class="size-pill-group" id="modal-size-pills">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- Quantity Selector -->
+          <div class="modal-quantity-row">
+            <span class="option-group-title" style="margin-bottom: 0;">Quantity:</span>
+            <div class="qty-counter">
+              <button class="qty-btn" type="button" onclick="window.AURA_APP.updateModalQty(-1)">−</button>
+              <input type="text" class="qty-input" id="modal-qty-input" value="1" readonly />
+              <button class="qty-btn" type="button" onclick="window.AURA_APP.updateModalQty(1)">+</button>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="modal-cta-stack">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+              <button class="btn btn-secondary" onclick="window.AURA_APP.addModalProductToCart(false)">Add to Cart</button>
+              <button class="btn btn-primary" onclick="window.AURA_APP.addModalProductToCart(true)">Buy Now</button>
+            </div>
+            <button class="btn btn-whatsapp" onclick="window.AURA_APP.orderModalProductViaWhatsApp()">
+              Order via WhatsApp
+            </button>
+          </div>
+
+          <!-- Tabs: Fragrance Notes, About, How to Use -->
+          <div class="modal-tabs-container">
+            <div class="modal-tabs-nav">
+              <button class="modal-tab-btn active" data-tab="notes">Fragrance Notes</button>
+              <button class="modal-tab-btn" data-tab="about">About This Fragrance</button>
+              <button class="modal-tab-btn" data-tab="usage">How To Use</button>
+            </div>
+
+            <!-- Notes Tab -->
+            <div class="modal-tab-panel active" id="tab-panel-notes">
+              <div class="notes-pyramid">
+                <div class="note-card">
+                  <div class="note-tier-title">Top Notes</div>
+                  <p id="note-top-text">[Top Notes Placeholder]</p>
+                </div>
+                <div class="note-card">
+                  <div class="note-tier-title">Heart Notes</div>
+                  <p id="note-heart-text">[Heart Notes Placeholder]</p>
+                </div>
+                <div class="note-card">
+                  <div class="note-tier-title">Base Notes</div>
+                  <p id="note-base-text">[Base Notes Placeholder]</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- About Tab -->
+            <div class="modal-tab-panel" id="tab-panel-about">
+              [About this fragrance placeholder]
+            </div>
+
+            <!-- How To Use Tab -->
+            <div class="modal-tab-panel" id="tab-panel-usage">
+              [How to use placeholder]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       CHECKOUT MODAL (Shipping & Order Confirmation)
+       ========================================================================== -->
+  <div class="modal-overlay" id="checkout-modal" role="dialog" aria-modal="true">
+    <div class="checkout-modal-window">
+      <button class="modal-close-btn modal-close-trigger" aria-label="Close Checkout">✕</button>
+
+      <span class="section-label">Concierge Checkout</span>
+      <h3 style="font-size: 2rem; margin-bottom: 0.5rem; text-transform: uppercase;">Shipping & Dispatch</h3>
+      <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+        Enter your dispatch coordinates. You may finalize payment online (integration ready) or via WhatsApp concierge.
+      </p>
+
+      <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-dark); border-radius: var(--radius-sm); padding: 1.25rem; margin-bottom: 1.5rem;">
+        <h4 style="font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-primary); margin-bottom: 0.75rem;">Selected Items:</h4>
+        <div id="checkout-items-summary">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <form id="checkout-form" class="checkout-form">
+        <div class="form-group-row">
+          <div class="form-field">
+            <label for="checkout-name">Full Name *</label>
+            <input type="text" id="checkout-name" class="form-input" placeholder="e.g. Alexander Vance" required />
+          </div>
+          <div class="form-field">
+            <label for="checkout-phone">Mobile / WhatsApp Number *</label>
+            <input type="tel" id="checkout-phone" class="form-input" placeholder="+91 98765 43210" required />
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="checkout-address">Delivery Street Address *</label>
+          <input type="text" id="checkout-address" class="form-input" placeholder="Flat / House / Suite, Street address" required />
+        </div>
+
+        <div class="form-group-row">
+          <div class="form-field">
+            <label for="checkout-city">City *</label>
+            <input type="text" id="checkout-city" class="form-input" placeholder="e.g. Mumbai" required />
+          </div>
+          <div class="form-field">
+            <label for="checkout-pincode">Pincode *</label>
+            <input type="text" id="checkout-pincode" class="form-input" placeholder="e.g. 400001" required />
+          </div>
+        </div>
+
+        <!-- Payment Method Options -->
+        <div class="form-field" style="margin-top: 0.5rem;">
+          <label>Payment Preference:</label>
+          <div class="payment-options-grid">
+            <div class="payment-radio-card active">
+              <input type="radio" id="pay-wa" name="payment-method" value="whatsapp" checked />
+              <label for="pay-wa">WhatsApp Direct Order</label>
+            </div>
+            <div class="payment-radio-card">
+              <input type="radio" id="pay-gateway" name="payment-method" value="online" />
+              <label for="pay-gateway">UPI / NetBanking / Cards (Gateway Ready)</label>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+          Confirm Order Inquiry
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SEARCH MODAL (Giant Overlay)
+       ========================================================================== -->
+  <div class="modal-overlay" id="search-modal" role="dialog" aria-modal="true">
+    <div class="search-modal-window">
+      <button class="modal-close-btn modal-close-trigger" aria-label="Close Search">✕</button>
+
+      <span class="section-label">Discover Fragrance</span>
+      <h3 style="font-size: 1.8rem; text-transform: uppercase;">Search Aura Collection</h3>
+
+      <div style="position: relative;">
+        <span class="search-modal-icon">⚲</span>
+        <input type="text" id="search-giant-input" class="search-giant-input" placeholder="Search by name, notes or category..." autocomplete="off" />
+      </div>
+
+      <div class="search-live-results" id="search-live-results">
+        <p style="color:var(--text-muted); font-size:0.85rem; padding:1rem;">Type to search fragrances...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Action Button -->
+  <button class="floating-whatsapp-btn" onclick="window.AURA_APP.orderCartViaWhatsApp()" title="Chat with Aura Concierge" aria-label="Chat on WhatsApp">
+    💬
+  </button>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/products-data.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
